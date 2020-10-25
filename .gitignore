@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# 隐藏私钥信息
+.vuepress/config/secret.js
