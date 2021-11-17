@@ -6,13 +6,20 @@
   "author": "whl <whl-ol@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "vuepress dev src --port 8080",
+    "serve": "vuepress dev src --temp .temp --port 10001",
     "build": "vuepress build src"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.6",
+    "highlight.js": "^10.3.1",
     "moment": "^2.29.1",
+    "vue-highlight.js": "^3.1.0",
     "vuepress": "^1.7.1"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-register-components": "^1.7.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.4"
   }
 }

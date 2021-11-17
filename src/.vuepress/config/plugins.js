@@ -1,7 +1,11 @@
+const path = require('path')
 const moment = require('moment')
 const Secret = require('./secret')
 
 module.exports = {
+  '@vuepress/register-components': {
+    componentsDir: path.resolve(__dirname, '../../.components')
+  },
   '@vuepress/last-updated': {
     transformer: (timestamp, lang) => {
       moment.locale(lang)
